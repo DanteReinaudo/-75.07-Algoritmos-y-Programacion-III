@@ -1,0 +1,15 @@
+Solucion Planteada:
+ Mi solucion consiste en la creacion de una persona la cual al inicializarse se crea con una fecha de cumpleaños pasada por parametro 
+ y una tarjeta sube que se crea al momento de la creacion del personaje.
+ La tarjeta sube se crea con un saldo fijo constante al momento de su creacion, cuenta con una clase descuento a la cual le delega la responsabilidad calcular el descuento para los cumpleaños.
+ La tarjeta sube cuenta con dos estados posibles, tarifaSocial y tarifaNormal, los cuales tienen distintos comportamientos a la hora de cobrar los viajes.
+ El descuento tiene un calendario, este a su vez tiene una fecha del dia de hoy como atributo, se omite la forma en la que este conoce el dia de hoy para simplificar el codigo
+ El descuento le delega la responsabilidad al calendario de saber el dia de hoy. 
+ Una vezs obtenido el descuento que calculo la clase Descuento, la sube le pasa este parametro a su estado tarifa, y este se encarga de calcular la diferencia entre el saldo y el precio del viaje, ademas de lanzar una excepcion en caso de que no haya saldo suficiente
+ La
+
+Posibles refactors(los aplicaria pero me quede sin tiempo)
+ eliminar la clase calendario, no es muy necesaria
+ eliminar el retorno de variables booleanas
+ la sube podria tener referencia a la fecha de cumpleaños de su dueño para no tener que estar pasandola por parametro
+ 

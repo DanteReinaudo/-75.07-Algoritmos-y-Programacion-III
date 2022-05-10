@@ -1,0 +1,14 @@
+Dudas TP2
+
+Que es conveniente, que cada bloque le envie un mensaje al personaje,
+lo que implicaria tener un metodo por cada bloque, o que el personaje
+le pase la posicion al bloque y este le devuelva la nueva posicion, 
+esto rompe encapsulamiento? que es mas recomendable?
+
+
+Como nos recomendaria modelar la pizarra/tablero, con una matriz o como?
+Deberamos modelar celdas?
+
+Tablero deberia tener referencia a la pizarra?
+
+Como recibe los bloques el tablero ?
